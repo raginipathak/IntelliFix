@@ -1,0 +1,105 @@
+/* Landing Page */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  font-family: 'Fira Code', monospace;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.get-started {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Fira Code', monospace; /* <- add this */
+}
+
+
+.get-started:hover {
+  background: #0ea5e9;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: #000000;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  overflow: auto;
+}

@@ -1,0 +1,19 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font */
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #0f172a; /* dark theme base */
+  color: white;
+  min-height: 100vh;
+}
+
+/* Smooth transitions */
+button, .review {
+  transition: all 0.3s ease;
+}
